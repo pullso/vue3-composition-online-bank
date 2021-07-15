@@ -1,0 +1,1 @@
+const ERROR_CODES = {  EMAIL_NOT_FOUND: 'Пользователь с таким email был найден',  INVALID_PASSWORD: 'Неверный пароль',  auth: 'Пожалуйста, авторизуйтесь'}export default function error (code) {  return ERROR_CODES[code] ? ERROR_CODES[code] : 'Неизвестная ошибка'}

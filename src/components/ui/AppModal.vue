@@ -1,0 +1,1 @@
+<template>  <div class="modal-backdrop" @click="$emit('close')"></div>  <div class="modal">    <h3 class="title" v-if="title">{{ title }}</h3>        <slot></slot>  </div></template><script>export default {  emits: ['close'],  name: 'AppModal',  props: {    title: {      type: String,    }  }}</script><style scoped></style>
